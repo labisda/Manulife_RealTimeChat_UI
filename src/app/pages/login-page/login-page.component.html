@@ -1,0 +1,29 @@
+<div class="flex flex-row items-center h-[100vh] px-32 gap-10 py-10 bg-slate-100">
+
+    <div class="page-title max-w-lg w-full mx-auto">
+        <h1 class="text-[#00A758] !text-5xl">Simple</h1>
+        <h1 class="text-[#0000C1] !text-3xl">Real-Time Chat System</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas expedita reprehenderit exercitationem
+            maxime nam saepe incidunt numquam provident, rem eos non pariatur, dolorum ut sunt?</p>
+    </div>
+
+    <div class="max-w-[400px] !box-border w-100 mx-auto bg-white rounded p-10 shadow-lg h-fit">
+
+        <form class="mt-5" (ngSubmit)="onSubmit(credentials.value)" [formGroup]="credentials">
+            <mat-form-field class="!w-[100%] pt-0 mb-3" floatLabel='never'>
+                <label class="absolute top-[-18px]" for="username">Username</label>
+                <input matInput id="username" autocomplete="on" formControlName="username">
+            </mat-form-field>
+
+            <mat-form-field class="!w-[100%] pt-0 mb-3" floatLabel='never'>
+                <label class="absolute top-[-18px]" for="password">Password</label>
+                <input matInput id="password" type="password" autocomplete="on" formControlName="password">
+            </mat-form-field>
+
+            <button mat-raised-button color="primary" class="!w-[100%]" type="submit">Login</button>
+            <button mat-stroked-button color="primary" class="!w-[100%] !mt-2" type="button" routerLink="/signup">Create Account</button>
+        </form>
+
+    </div>
+
+</div>

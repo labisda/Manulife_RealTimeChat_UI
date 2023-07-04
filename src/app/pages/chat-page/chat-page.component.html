@@ -1,0 +1,88 @@
+<div class="overlay-bg p-10">
+
+    <div class="flex items-center justify-center h-[100vh]">
+
+        <div class="flex flex-row bg-white rounded-md shadow-lg w-[100%] max-w-[1500px] h-[700px]">
+            <div class="chat-content w-[70%] p-5">
+
+                <div class="!mb-4">
+                    <h1 class="inline !mr-2">Real-Time Chat System</h1><span>(test lang hehe)</span>
+                </div>
+                <hr>
+
+                <div class="chat-list py-3 px-5 h-[100%] max-h-[480px] overflow-auto">
+
+                    <ng-container *ngFor="let chat of chatList; let i = index">
+
+                        <div class="flex flex-row items-center gap-4 mb-2" *ngIf="(chatList[i == 0 ? 0 : i-1].user_id != chat.user_id) && chat.user_id != userId">
+                            <p class="!m-0 capitalize">{{ chat.fullname }}</p>
+                        </div>
+    
+                        <div class="flex justify-start" *ngIf="chat.user_id != userId">
+                            <div class="w-fit max-w-[600px] mb-3">
+                                <div class="chat-message bg-[#ececec] rounded shadow-lg px-5 py-4 w-200 max-w-[500px] box-border">
+                                    {{ chat.message }}
+                                    <p class="chat-date">{{ chat.date_created | date:'h:mm a' }}</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex justify-end">
+                            <div class="w-fit max-w-[600px] mb-3" *ngIf="chat.user_id == userId">
+                                <div class="bg-[#C1D8F7] relative rounded shadow-lg px-5 py-4 right-0">
+                                    {{ chat.message }}
+                                    <p class="chat-date">{{ chat.date_created | date:'h:mm a' }}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </ng-container>
+
+                </div>
+
+                <hr>
+
+                <div class="py-5">
+                    <textarea class="input-textarea shadow-lg rounded" rows="3" placeholder="Type a new message ..."
+                        [(ngModel)]="message" (keypress)="sendChat($event)"></textarea>
+                    <div class="press-enter" [ngClass]="{'message-shake': shake && isSubmitted}">{{ enterMessage }}</div>
+                </div>
+
+            </div>
+
+            <div class="user-online-list w-[30%] border py-5 pl-5 pr-0">
+                <h2>User List</h2>
+
+                <hr>
+                <br>
+
+                <div class="max-h-[600px] h-fit overflow-auto">
+                    <b>Online</b>
+                    <div class="pl-5 mb-10">
+                        <ul>
+                            <li class="py-1">Darwin Labiste</li>
+                            <li class="py-1">Joshua Pecson</li>
+                            <li class="py-1">Jermayne Carabeo</li>
+                        </ul>
+                    </div>
+
+                    <hr>
+                    <br>
+
+                    <b class="mt-10">Offline</b>
+                    <div class="pl-5">
+                        <ul>
+                            <li class="py-1">Darwin Labiste</li>
+                            <li class="py-1">Joshua Pecson</li>
+                            <li class="py-1">Jermayne Carabeo</li>
+                            <li class="py-1">Darwin Labiste</li>
+                            <li class="py-1">Joshua Pecson</li>
+                            <li class="py-1">Jermayne Carabeo</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>

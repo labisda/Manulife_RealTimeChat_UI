@@ -1,0 +1,123 @@
+$body: 11pt;
+$caption: 8.5pt;
+$h1: 45.5pt;
+$h2: 41pt;
+$h3: 36.5pt;
+$h4: 32.5pt;
+$h5: 28pt;
+$h6: 24pt;
+$h7: 19pt;
+$h8: 15pt;
+// localhost
+ $url: "..";
+
+
+
+@font-face {
+    font-family: 'Manulife-Regular';
+    src: url($url + "/fonts/ManulifeJHSans-Optimized.TTF");
+}
+
+@font-face {
+    font-family: 'Manulife-Light';
+    src: url($url + "/fonts/ManulifeJHSans-Optimized-Light.TTF");
+}
+
+@font-face {
+    font-family: 'Manulife-Italic';
+    src: url($url + "/fonts/ManulifeJHSans-Optimized-Italic.TTF");
+}
+
+@font-face {
+    font-family: 'Manulife-Demibold';
+    src: url($url + "/fonts/ManulifeJHSans-Optimized-Demibold.TTF");
+}
+
+@font-face {
+    font-family: 'Manulife-Bold';
+    src: url($url + "/fonts/ManulifeJHSans-Optimized-Bold.TTF");
+}
+// Font weight
+@mixin f0() {
+    font-family: 'Manulife-Regular';
+    font-weight: 100;}
+@mixin f0i() {
+    font-family: 'Manulife-Regular';
+    font-weight: 100;
+    font-style: italic;}
+
+@mixin f1() {
+    font-family: 'Manulife-Regular';
+    font-weight: 300;}
+@mixin f1i() {
+    font-family: 'Manulife-Regular';
+    font-weight: 300;
+    font-style: italic;}
+
+@mixin f2() {
+    font-family: 'Manulife-Regular';
+    font-weight: 400;}
+@mixin f2i() {
+    font-family: 'Manulife-Regular';
+    font-weight: 400;
+    font-style: italic;}
+
+@mixin f3() {
+    font-family: 'Manulife-Regular';
+    font-weight: 500;}
+@mixin f3i() {
+    font-family: 'Manulife-Regular';
+    font-weight: 500;
+    font-style: italic;}
+
+// unselectable text
+@mixin unselect(){
+    user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;}
+
+// Font size
+@mixin body(){
+    font-family: 'Manulife-Regular';
+    font-size: $body;
+    line-height: $body + 4;}
+@mixin caption(){
+    font-family: 'Manulife-Regular';
+    font-size: $caption;
+    line-height: $caption;}
+@mixin h1(){
+    font-family: 'Manulife-Regular';
+    font-size: $h1;
+    line-height: $h1;}
+@mixin h2(){
+    font-family: 'Manulife-Regular';
+    font-size: $h2;
+    line-height: $h2;}
+@mixin h3(){
+    font-family: 'Manulife-Regular';
+    font-size: $h3;
+    line-height: $h3;}
+@mixin h4(){
+    font-family: 'Manulife-Regular';
+    font-size: $h4;
+    line-height: $h4;}
+@mixin h5(){
+    font-family: 'Manulife-Regular';
+    font-size: $h5;
+    line-height: $h5;}
+@mixin h6(){
+    font-family: 'Manulife-Regular';
+    font-size: $h6;
+    line-height: $h6;}
+@mixin h7(){
+    font-family: 'Manulife-Regular';
+    font-size: $h7;
+    line-height: $h7;}
+@mixin h8(){
+    font-family: 'Manulife-Regular';
+    font-size: $h8;
+    line-height: $h8;}
+

@@ -1,0 +1,164 @@
+$black-87-opacity: rgba(black, 0.87);
+$white-87-opacity: rgba(white, 0.87);
+$black-12-opacity: rgba(black, 0.12);
+$white-12-opacity: rgba(white, 0.12);
+$black-6-opacity: rgba(black, 0.06);
+$white-6-opacity: rgba(white, 0.06);
+
+$dark-primary-text: rgba(black, 0.87);
+$dark-secondary-text: rgba(black, 0.54);
+$dark-disabled-text: rgba(black, 0.38);
+$dark-dividers: rgba(black, 0.12);
+$dark-focused: rgba(black, 0.12);
+$light-primary-text: white;
+$light-secondary-text: rgba(white, 0.7);
+$light-disabled-text: rgba(white, 0.5);
+$light-dividers: rgba(white, 0.12);
+$light-focused: rgba(white, 0.12);
+
+$greenCore: (
+    "green1": #dcf8e8,
+    "green2": #ACE5C4, 
+    "green3": #5CD790, 
+    "green4": #00C46E, 
+    "green0": #00A758,
+    "green5": #06874E, 
+    "green6": #046138, 
+    "green7": #004427,
+  contrast: (
+    "green1": $dark-primary-text,
+    "green2": $dark-primary-text,
+    "green3": $dark-primary-text,
+    "green4": $light-primary-text,
+    "green0": $light-primary-text,
+    "green5": $light-primary-text,
+    "green6": $light-primary-text,
+    "green7": $light-primary-text,
+  )
+);
+
+$blueCore: (
+    "blue1": #C1D8F7, 
+    "blue2": #76B0FF, 
+    "blue3": #2D69FF, 
+    "blue4": #0000C1, 
+    "blue0": #0000C1,
+    "blue5": #00009A, 
+    "blue6": #000082, 
+    "blue7": #000060,
+  contrast: (
+    "blue1": $dark-primary-text,
+    "blue2": $dark-primary-text,
+    "blue3": $light-primary-text,
+    "blue4": $light-primary-text,
+    "blue0": $light-primary-text,
+    "blue5": $light-primary-text,
+    "blue6": $light-primary-text,
+    "blue7": $light-primary-text,
+  )
+);
+
+$coralAccent: (
+    "coral1": #F6DCD8, 
+    "coral2": #F6CCC7, 
+    "coral3": #FCACA1, 
+    "coral4": #F69082, 
+    "coral0": #FF7769,
+    "coral5": #EC6453, 
+    "coral6": #DC5A44, 
+    "coral7": #C14A36,
+  contrast: (
+    "coral1": $dark-primary-text,
+    "coral2": $dark-primary-text,
+    "coral3": $dark-primary-text,
+    "coral4": $dark-primary-text,
+    "coral0": $dark-primary-text,
+    "coral5": $dark-primary-text,
+    "coral6": $light-primary-text,
+    "coral7": $light-primary-text,
+  )
+);
+
+$navyNeutral: (
+    "navy1": #FFFFFF, 
+    "navy2": #FAFAFA, 
+    "navy3": #EDEDED, 
+    "navy4": #8E90A2, 
+    "navy0": #5E6073,
+    "navy5": #424559, 
+    "navy6": #34384B, 
+    "navy7": #282B3E,
+  contrast: (
+    "navy1": $dark-primary-text,
+    "navy2": $dark-primary-text,
+    "navy3": $dark-primary-text,
+    "navy4": $dark-primary-text,
+    "navy0": $light-primary-text,
+    "navy5": $light-primary-text,
+    "navy6": $light-primary-text,
+    "navy7": $light-primary-text,
+  )
+);
+
+$violetSecondary: (
+    "violet1": #D9D2E8, 
+    "violet2": #BEB4D3, 
+    "violet3": #8877AB, 
+    "violet4": #533573, 
+    "violet0": #361558,
+    "violet5": #260B42, 
+    "violet6": #1D0833, 
+    "violet7": #0F011D,
+  contrast: (
+    "violet1": $dark-primary-text,
+    "violet2": $dark-primary-text,
+    "violet3": $dark-primary-text,
+    "violet4": $light-primary-text,
+    "violet0": $light-primary-text,
+    "violet5": $light-primary-text,
+    "violet6": $light-primary-text,
+    "violet7": $light-primary-text,
+  )
+);
+
+$goldSecondary: (
+    "gold1": #FBE9C6, 
+    "gold2": #F8D38A, 
+    "gold3": #FCC457, 
+    "gold4": #F9AB2E, 
+    "gold0": #F49600,
+    "gold5": #E38400, 
+    "gold6": #CE7612, 
+    "gold7": #A75900,
+  contrast: (
+    "gold1": $dark-primary-text,
+    "gold2": $dark-primary-text,
+    "gold3": $dark-primary-text,
+    "gold4": $dark-primary-text,
+    "gold0": $dark-primary-text,
+    "gold5": $dark-primary-text,
+    "gold6": $dark-primary-text,
+    "gold7": $light-primary-text,
+  )
+);
+
+$turqSecondary: (
+    "turq1": #C5F4F1, 
+    "turq2": #9DF3ED, 
+    "turq3": #6AE7DF, 
+    "turq4": #28D7CB, 
+    "turq0": #06C7BA,
+    "turq5": #05B2A7, 
+    "turq6": #08A298, 
+    "turq7": #0B9189,
+  contrast: (
+    "turq1": $dark-primary-text,
+    "turq2": $dark-primary-text,
+    "turq3": $dark-primary-text,
+    "turq4": $dark-primary-text,
+    "turq0": $dark-primary-text,
+    "turq5": $dark-primary-text,
+    "turq6": $dark-primary-text,
+    "turq7": $light-primary-text,
+  )
+);
