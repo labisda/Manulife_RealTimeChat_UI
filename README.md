@@ -1,8 +1,8 @@
 # Steps in encrypting/decrypting Web Config
 
-1) Run CMD as Administrator
-2) cd C:\Windows\Microsoft.NET\Framework64\v4.0.30319
-3) Encrypt/Decrypt Web Config
+1. Run CMD as Administrator
+2. cd C:\Windows\Microsoft.NET\Framework64\v4.0.30319
+3. Encrypt/Decrypt Web Config
 
 > Encrypting Web Config
 > - ASPNET_REGIIS -pef "system.webServer" "{webconfig path}"
